@@ -1,0 +1,14 @@
+#names{
+color: red;
+font-variant: small-caps;
+font-size: medium;
+}
+canvas{
+animation-name: hi;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes hi{
+    from{box-shadow: 1px 1px 38px rgb(64, 224, 149);}
+    to{box-shadow: 1px 1px 38px rgb(95, 0, 139);}
+}
