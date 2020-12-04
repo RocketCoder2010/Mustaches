@@ -1,4 +1,6 @@
-function preload(){}
+function preload(){
+    mos=loadImage("https://i.postimg.cc/52vtsPym/mostache.png");
+}
 function setup(){
    canvas=createCanvas(400,400);
     canvas.center();
@@ -12,14 +14,18 @@ function gotPoses(results){
     if (results.length> 0) {
         console.log(results);
 console.log("nose x="+ results[0].pose.nose.x);
-console.log("nose y="+ results[0].pose.nose.y);   
+console.log("nose y="+ results[0].pose.nose.y);  
+
 }
+nosex=   results[0].pose.nose.x-10;
+nosey= results[0].pose.nose.y;
 }
 function modelLoaded(){
     console.log("(●'◡'●)")
 }
 function draw(){
     image(video, 0, 0, 400, 400);
+image(mos,nosex,nosey,30,30)
 }
 function tksnap(){
     save('wee.png');
