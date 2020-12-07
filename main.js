@@ -23,6 +23,8 @@ nosey= results[0].pose.nose.y;
 function modelLoaded(){
     console.log("(●'◡'●)")
 }
+nosex=0;
+nosey=0;
 function draw(){
     image(video, 0, 0, 400, 400);
 image(mos,nosex,nosey,30,30)
